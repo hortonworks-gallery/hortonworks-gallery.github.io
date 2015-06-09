@@ -1,0 +1,386 @@
+
+// ==== COLORS ================================== //
+
+
+$hwx-slateblue:         #44697d;
+$hwx-green:             #69be28;
+$hwx-orange:            #e17000;
+$hwx-darkgray:          #333333;
+
+// ==== BASE ==================================== //
+
+
+html, body {
+    background: #f2f2f2;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: Cabin, 'Helvetica Neue', Arial, Helvetica, 'Lucida Grande', sans-serif;
+    font-size: 1em;
+    line-height: 150%;
+    color: $hwx-darkgray;
+}
+
+a {
+    color: $hwx-slateblue;
+
+    &:hover {
+        color: black;
+        color: $hwx-slateblue;
+        text-decoration: none;
+    }
+}
+
+h2 {
+    text-align: left;
+    font-family: Cabin, 'Helvetica Neue', Arial, Helvetica, 'Lucida Grande', sans-serif;
+}
+
+hr {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+// ==== LAYOUT ==================================== //
+
+.ps {
+    width: 100%;
+    text-align: center;
+}
+
+.site {
+    max-width: 1127px;
+    margin: auto;
+    text-align: left;
+    padding: 20px 40px;
+
+    @media (min-width: 1127px) {
+        padding: 0 20px;
+    }
+}
+
+.content {
+    min-height: 400px;
+}
+
+// ==== LOGO ==================================== //
+
+.hwx-logo a {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 68px;
+    margin: 0 auto;
+    background: url(../img/hortonworks-logo-wht.png) no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+}
+
+// ==== MAST ==================================== //
+
+.ps.mast {
+    background-color: #333;
+
+    .hwx-logo {
+        max-width: 200px;
+        padding: 10px 0;
+    }
+}
+
+.ps.titlebar {
+    background-color: $hwx-orange;
+
+    .title {
+        min-height: 0;
+        margin: 0;
+        font-family: Cabin, 'Helvetica Neue', Arial, Helvetica, 'Lucida Grande', sans-serif;
+        line-height: 1.2;
+        font-size: 36px;
+        font-weight: normal;
+        color: #fff;
+
+        @media (min-width: 1127px) {
+            min-height: 100px;
+            font-size: 46px;
+            line-height: 100px;
+        }
+    }
+}
+
+// ==== NAV ==================================== //
+
+.navbar {
+    z-index: 5;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+    text-align: left;
+
+    .nav {
+        margin-top: 3px;
+
+        .active {
+
+            a {
+                color: white !important;
+                background-color: #999 !important;
+
+                &:hover {
+                    text-shadow: none !important;
+                }
+            }
+        }
+
+        &.navbar-nav {
+        
+            & > li {
+
+                &.featured {
+                    margin-right: 20px;
+                    background-color: $hwx-orange;
+
+                    .nav-category {
+                        background-color: $hwx-orange;
+                        color: #fff !important;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &.active {
+                    
+                    .nav-category {
+                        background-color: #aaa;
+                    }
+                }
+
+                & > a {
+                    padding: 3px 14px;
+                    color: #aaa;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .navbar-right {
+        margin-right: 0 !important;
+
+        a {
+            &:hover {
+                background-color: darken($hwx-green, 10%); 
+                color: #fff;
+            }
+        }
+    }
+}
+
+.nav-category {
+    font-family: Cabin, 'Helvetica Neue', Arial, Helvetica, 'Lucida Grande', sans-serif;
+    background-color: #eee;
+    color: #bbb;
+    font-size: 12px;
+
+    &:hover {
+        border-radius: 0;
+        background-color: $hwx-green;
+        color: white;
+    }
+}
+
+.ps.dev-resources {
+    text-align: left;
+    // margin-bottom: 20px;
+    padding-bottom: 0;
+
+    h2 {
+        margin: 0 0 30px;
+    }
+}
+
+.more-pane {
+    margin-bottom: 40px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    .more-about {
+        padding-right: 30px;
+    }
+
+    .more-resources {
+
+        .res {
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+
+    .more-social {
+        .channel {
+            color: $hwx-darkgray;
+            font-size: 25px;
+            margin-right: 40px;
+        }
+    }
+}
+
+.container-wrap {
+    background-color: #f6f6f6;
+    width: 100%;
+    text-align: center;
+
+    .container {
+        background-color: #fff;
+        max-width: 1170px;
+        padding: 0 40px;
+        text-align: left;
+        width: 100%;
+
+        h1 {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 400;
+            line-height: 1.1;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            display: inline-block;
+            font-size: 59px;
+            margin-top: 83px;
+            min-width: 732px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    }
+}
+
+// ==== GRID ==================================== //
+
+
+.mix {
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background-color: #f6f6f6;
+
+    .categories {
+        display: block;
+        margin: 0 0 20px 18px;
+        font-size: 12px;
+
+        .filter {
+            text-transform: uppercase !important;
+        }
+    }
+
+    .title {
+        display: block;
+        margin: 10px 0 0 18px;
+        font-size: 24px;
+
+        a {
+            font-family: cabin;
+            font-weight: normal;
+            color: $hwx-slateblue;
+        }
+    }
+
+    .description {
+        margin: 10px 0 0;
+
+        .desc-text {
+            overflow: hidden;
+            font-size: 14px;
+        }
+    }
+
+    .btn {
+        padding: 12px;
+    }
+
+    .more-details {
+        clear: left;
+        margin-left: 0;
+        padding-top: 30px;
+        color: $hwx-slateblue;
+
+        .contributors {
+            display: block;
+            margin-left: 15px;
+            font-size: 14px;
+            color: black;
+        }
+    }
+}
+
+.mix .more-details .contributors {
+   display: block;
+   margin-left: 15px;
+   font-size: 14px;
+   color: black; 
+}
+
+// ==== BUTTONS ==================================== //
+
+.btn {
+    background-color: $hwx-green;
+    color: white;
+    border-radius: 0;
+    border: 0;
+
+    &.lg {
+        padding: 15px 20px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    &.orange {
+        background-color: $hwx-orange;
+    }
+}
+
+// === RULES ======================================== //
+
+hr.separator {
+  margin: 50px 0;
+  height: 1px;
+  border: 0;
+  background-color: $hwx-orange;
+}
+
+// === FOOTER ======================================= //
+
+#footer {
+    text-align: center; 
+    background-color: #333333;
+    padding: 40px 0;
+
+    .hwx-logo {
+      margin-bottom: 15px;
+    }
+
+    .copy {
+        color: rgba(255, 255, 255, 0.1);
+        margin-bottom: 15px;
+        text-align: center;
+        line-height: 1.4;
+
+        a {
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 2em;
+        }
+    }
+}

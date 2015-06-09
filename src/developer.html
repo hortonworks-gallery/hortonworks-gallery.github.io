@@ -1,0 +1,362 @@
+<?php
+    // Add Page Specific Styles
+    function add_page_specific_stuff() {
+        // CSS
+        wp_enqueue_style('developer-css', get_bloginfo('template_directory').'/css/page-specific/developer.css');
+
+        // JS
+        wp_enqueue_script('jquery-js', get_template_directory_uri() . '/js/libs/jquery-2.1.1.min.js', false, false, true);
+        wp_enqueue_script('slick-js', get_template_directory_uri() . '/js/libs/slick.min.js', false, 'jquery-js', true);
+    }
+    add_action('wp_enqueue_scripts', 'add_page_specific_stuff');
+?>
+
+<?php get_header('dev'); ?>
+
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+    <section class="ps titlebar" style="background-color:#e17000;">
+        <div style="padding: 1px 40px;">
+            <h1 class="title">Resources for Hadoop Developers</h1>
+        </div>
+    </section>
+
+    
+    	<div class="carousel-wrap">
+	    	<section class="carousel">
+		        <div class="carousel-control">
+		        </div>
+
+		        <div style="overflow:hidden;">
+		        <div class="panes">
+		            <div class="pane">
+		            	<div class="pane-img" style="background-image: url(/wp-content/themes/hortonworks/images/page-specific/developer/hero1.jpg)"></div>
+		            	<div class="pane-content">
+		            		<h2>Getting started?</h2>
+		                    <div class="grid" style="margin: 0px 0 0.75em 0">
+		                		<div class="col-1-3">
+		                			<h3><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/introducing-apache-hadoop-developers/">Hadoop 101</a></h3>
+		                			<p>Hadoop and Hortonworks: How Map/Reduce solves hard problems.</p>
+		                			<? /* mobile button */ ?>
+		                			<a target="_blank" href="http://hortonworks.com/hadoop-tutorial/introducing-apache-hadoop-developers/" class="btn alt mobile">View tutorial</a>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3><a target="_blank" href="http://hortonworks.com/hdp/">Hortonworks data platform</a></h3>
+		                			<p>Meet the Hortonworks Data Platform: An overview of HDP’s architecture.</p>
+		                			<? /* mobile button */ ?>
+		                			<a target="_blank" href="http://hortonworks.com/hdp/" class="btn alt mobile">Learn more</a>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/">Hello data</a></h3>
+		                			<p>Get started navigating the Hortonworks Data Platform.</p>
+		                			<? /* mobile button */ ?>
+		                			<a target="_blank" href="http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/" class="btn alt mobile">View tutorial</a>
+		                		</div>
+		                	</div>
+		                	<? /* desktop buttons */ ?>
+		                	<div class="grid tight-top desk-btns" style="margin-bottom: 35px;">
+		                		<div class="col-1-3">
+		                			<a target="_blank" href="http://hortonworks.com/hadoop-tutorial/introducing-apache-hadoop-developers/" class="btn alt desktop">View tutorial</a>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<a target="_blank" href="http://hortonworks.com/hdp/" class="btn alt desktop">Learn more</a>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<a target="_blank" href="http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/" class="btn alt desktop">View tutorial</a>
+		                		</div>
+		                	</div>
+		            	</div>
+		            </div>
+		            <div class="pane">
+		            	<div class="pane-img" style="background-image: url(/wp-content/themes/hortonworks/images/page-specific/developer/hero2.jpg)"></div>
+		            	<div class="pane-content">
+		            		<h2>How Hadoop solves problems</h2>
+		                    <div class="grid">
+		                		<div class="col-1-3">
+		                			<h3>Data Discovery</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="http://hortonworks.com/use-cases/sentiment-analysis-hadoop-example/">
+		                					Discover and identify patterns with HDP’s Data Discovery tools</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/use-cases/clickstream-hadoop-example/">
+		                					Clickstreams and funnels: Understand your customers
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/use-cases/server-logs-hadoop-example/">
+		                					Server logs: Discover anomalies and make infrastructure visible
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/use-cases/sensor-data-hadoop-example/">
+		                					Sensors and IOT: Query the real world
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/use-cases/analyze-geolocation-data-hadoop/">
+		                					Geo data and predictive analytics
+		                				</a></li>
+		                			</ul>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3>Predictive Analytics</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/using-revolution-r-enterprise-tutorial-hortonworks-sandbox/">
+		                					Use Revolution R Enterprise with Hortonworks Sandbox</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/big-data-insights/utilizing-hadoop-analytics-predictive-hiring/">
+		                					Predictive hiring: Find the good apple
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/big-data-insights/predictive-analytics-creates-improved-lending-practices-part-1/">
+		                					Predicting good borrowers and better lending practices
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/industry/retail/">
+		                					Retail use cases of Hadoop
+		                				</a></li>
+		                			</ul>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3>Data Architecture Optimization</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="https://www.youtube.com/watch?v=YXTDF76apZQ">
+		                					SQL at scale with Hortonworks
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-process-data-with-apache-hive/">
+		                					HDP and Hive: The power of SQL and Map/Reduce
+		                				</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/blog/5-ways-make-hive-queries-run-faster/">
+                                                How to optimize your SQL query
+		                				</a></li>
+                                        <li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/supercharging-interactive-queries-hive-tez/">
+                                                Benefits of Apace Hive using Tez
+                                            </a></li>
+		                			</ul>
+		                		</div>
+		                	</div>
+	                	</div>
+		            </div>
+		            <div class="pane">
+		            	<div class="pane-img" style="background-image: url(/wp-content/themes/hortonworks/images/page-specific/developer/hero3.jpg)"></div>
+		            	<div class="pane-content">
+			            	<h2>Build your proof of concept</h2>
+		                    <div class="grid">
+		                		<div class="col-1-3">
+		                			<h3>Load</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/using-commandline-manage-files-hdfs/">
+		                					HDFS, the command line, and you</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/import-microsoft-sql-server-hortonworks-sandbox-using-sqoop/">
+		                					Sqoop: Connecting relational persistence to HDP</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/simulating-transporting-realtime-events-stream-apache-kafka/">
+		                					Kafka: Durable queue execution for ironclad ingest and processing</a></li>
+		                			</ul>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3>Process</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-process-data-with-apache-pig/">
+		                					Control the flow of data through HDP with Pig</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/ingesting-processing-real-time-events-apache-storm/">
+		                					Storm: Your code and data, distributed and in real time</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/using-apache-spark-hdp/">
+		                					Spark: Fast distributed execution atop diverse datasets in Java, Scala or Python</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/blog/logparsing-with-cascading/">
+		                					Cascading: Robust HDP-enabled application architectures</a></li>
+		                			</ul>
+		                		</div>
+		                		<div class="col-1-3">
+		                			<h3>Access</h3>
+		                			<ul>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-process-data-with-apache-hive/">
+		                					Exploring and discovering data through Hive</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-use-hcatalog-basic-pig-hive-commands/">
+		                					HCatalog: Unifying distributed data behind a simple interface</a></li>
+		                				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/lap-around-deploying-managing-configuring-hdp-ambari-1-7/">
+		                					Ambari: Painless cluster management and monitoring</a></li>
+		                			</ul>
+		                		</div>
+		                	</div>
+	                	</div>
+		            </div>
+		        </div>
+		        </div>
+	    	</section>
+	    </div>
+
+    <section class="ps dev-resources">
+    	<div>
+	    	<div class="grid" style="margin-bottom:10px;">
+	    		<div class="col-2-3">
+	    			<h2>Hadoop developer resources</h2>
+	    		</div>
+	    		<div class="col-1-3">
+	    			<a target="_blank" href="http://hortonworks.com/products/hortonworks-sandbox/#install" class="btn loud alt">Download Sandbox</a>
+	    		</div>
+	    	</div>
+	    	<div class="grid" style="margin-bottom:0;">
+	    		<div class="col-1-3">
+	    			<h3>Popular tutorials</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/hello-world-an-introduction-to-hadoop-hcatalog-hive-and-pig/">
+	    					Hello World!</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-process-data-with-apache-hive/">
+	    					How to Process Data with Apache Hive</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/using-commandline-manage-files-hdfs/">
+	    					Using the Command Line to Manage Files on HDFS</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/how-to-use-basic-pig-commands/">
+	    					How to Use Basic Pig Commands</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/hadoop-tutorial/using-apache-spark-hdp/">
+	    					Using Apache Spark</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/tutorials/" class="all">
+	    					See All</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="col-1-3">
+	    			<h3>Webinars</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="https://www.brighttalk.com/webcast/9573/140775">
+	    					Ambari Stacks, Views and Blueprints Workshop</a></li>
+	    				<li><a target="_blank" href="https://www.brighttalk.com/webcast/9573/146415">
+	    					Big Data and Analytics in Retail and Consumer Product</a></li>
+	    				<li><a target="_blank" href="https://www.brighttalk.com/webcast/9573/147519">
+	    					Getting to What Matters: Accelerating Your Path Through the Big Data Lifecycle with CSC</a></li>
+	    				<li><a target="_blank" href="https://www.brighttalk.com/webcast/9573/140773">
+	    					In-Memory Processing with Apache Spark</a></li>
+	    				<li><a target="_blank" href="https://www.brighttalk.com/webcast/10531/147095">
+	    					Big Data Storage and Analytics Q&amp;A</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/webinars" class="all">
+	    					See All</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="col-1-3">
+	    			<h3>Forums</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/forum/hortonworks-sandbox/">
+	    					Hortonworks Sandbox</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/forum/ambari/">
+	    					Ambari</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/forum/hdfs/">
+	    					HDFS</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/forum/mapreduce/">
+	    					MapReduce</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/forum/hbase/">
+	    					HBase</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/community/forums/" class="all">
+	    					See All</a></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    	<div class="grid">
+	    		<div class="col-1-3">
+	    			<h3>Slideshares</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="http://www.slideshare.net/hortonworks/apache-hadoop-yarn-understanding-the-data-operating-system-of-hadoop">
+	    					YARN: Apache Hadoop Next-Generation Compute Platform</a></li>
+	    				<li><a target="_blank" href="http://www.slideshare.net/hortonworks/hortonworks-elastic-searchfinal">
+	    					Combine Apache Hadoop and Elasticsearch to Get the Most Out of Your Big Data</a></li>
+	    				<li><a target="_blank" href="http://www.slideshare.net/hortonworks/mfst-hortonworks-mdawebinarfinal">
+	    					Hybrid Modern Data Architecture with Microsoft and Apache Hadoop</a></li>
+	    				<li><a target="_blank" href="http://www.slideshare.net/hortonworks/yarn-ready-webinarslideraug072014">
+	    					YARN Ready—Integrating to YARN Using Slider</a></li>
+	    				<li><a target="_blank" href="http://www.slideshare.net/hortonworks/presentations" class="all">
+	    					See All</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="col-1-3">
+	    			<h3>Developer tools</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="https://github.com/abajwa-hw/iframe-view">abajwa-hw / iframe-view</a>
+	    					<div class="desc">Code sample for embedding webapps in Ambari views</div></li>
+	    				<li><a target="_blank" href="https://github.com/pcodding/stream-simulator">pcodding / stream-simulator</a>
+	    					<div class="desc">Code sample for simulating streaming data endpoints</div></li>
+	    				<!--<li><a target="_blank" href="http://hortonworks.com/labs/developer-tools/">Frameworks</a></li>-->
+	    				<li><a target="_blank" href="http://hortonworks.com/hdp/addons/">Add-ons</a>
+                            <div class="desc">Find add-ons such as Hadoop Connectors, Drivers, Partner Packages, and more</div></li>
+	    				<li><a target="_blank" href="https://github.com/timveil/hive-jdbc-uber-jar">timveil / hive-jdbc-uber-jar</a>
+	    					<div class="desc">Maven project to package all JDBC dependencies for connecting to Hive</div></li>
+	    				<li><a target="_blank" href="https://github.com/hortonworks/" class="all">Hortonworks on GitHub</a></li>
+	    			</ul>
+	    		</div>
+	    		<div class="col-1-3">
+	    			<h3>More resources</h3>
+	    			<ul>
+	    				<li><a target="_blank" href="http://docs.hortonworks.com" class="icon book">
+	    					Documentation</a></li>
+	    				<li><a target="_blank" href="http://stackoverflow.com/search?q=hortonworks" class="icon stack">
+	    					Stack Overflow</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/blog/type/dev/" class="icon chat">
+	    					Blog</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/events/" class="icon events">
+	    					Events</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/training/" class="icon cap">
+	    					Training</a></li>
+	    				<li><a target="_blank" href="http://hortonworks.com/support/" class="icon headset">
+	    					Enterprise Support</a></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+    	</div>
+    </section>
+
+<?php endwhile; // end of the loop. ?>
+
+<?php get_footer('dev'); ?>
+
+<script>
+'use strict';
+
+jQuery(document).ready(function(){
+
+	var devDebugTabsPaging = function (slider, i) {
+	    var label = '';
+	    switch (i) {
+	        case 0: label = 'Learn'; break;
+	        case 1: label = 'Try'; break;
+	        case 2: label = 'Do'; break;
+	    }
+	    return '<div class="nav-tab ' + label + '">' + label + '</div>';
+	};
+
+	var elem = jQuery('.carousel .panes').slick({
+		dots: true,
+		customPaging: devDebugTabsPaging,
+		appendDots: '.carousel-control',
+		prevArrow: 	'<div class="slick-nav prev">' + 
+					'<div class="slick-icon prev"></div>' + 
+					'<div class="slick-label prev">Do</div>' +
+					'</div>',
+		nextArrow: 	'<div class="slick-nav next">' + 
+					'<div class="slick-icon next"></div>' + 
+					'<div class="slick-label next">Try</div>' +
+					'</div>',
+		autoplay: false,
+		draggable: true,
+		responsive: true,
+		infinite: false,
+		adaptiveHeight: true
+	});
+
+	var setLabels = function (el, i) {
+
+	    var label = function(i) {
+	    	switch (i) {
+	    	    case 0: return 'Learn'; break;
+	    	    case 1: return 'Try'; break;
+	    	    case 2: return 'Do'; break;
+	    	}
+	    };
+	    el.find('.slick-label.prev').text(label(i-1));
+	    el.find('.slick-label.next').text(label(i+1));
+	    return true;
+	};
+
+	elem.on('afterChange', function(evt, slick, currentSlide){ 
+		setLabels(elem, currentSlide);
+	});
+
+	
+	jQuery('.carousel').on({
+	    mouseover: function () {
+	    	console.log(jQuery(window).innerWidth());
+			if (jQuery(window).innerWidth() > 1140) {
+	        	jQuery(this).children('.slick-label').show();
+			}
+	    },
+	    mouseleave: function () {
+	        jQuery(this).children('.slick-label').hide();
+	    }
+	}, '.slick-nav');
+});
+</script>

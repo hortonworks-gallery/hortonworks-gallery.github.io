@@ -1,0 +1,277 @@
+[{
+    "categories": [{
+        "name": "ambari views"
+    }, {
+        "name": "featured"
+    }],
+    "projectTitle": "Ambari Store View",
+    "projectDescription": "Allows users to easily browse, search, and install Ambari Views from the Hortonworks Community Gallery from withing Ambari.  Requires minimal effort to install.",
+    "linkToGithub": "https://github.com/jpplayer/amstore-view"
+}, {
+    "categories": [{
+        "name": "data"
+    }, {
+        "name": "featured ambari stacks"
+    }],
+    "projectTitle": "Stacks",
+    "projectDescription": "A JavaScript client for Node to connect to SAP HANA.",
+    "linkToGithub": "https://github.com/SAP/node-hdb"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "OData Library for Java",
+    "projectDescription": "A Java based libary for producing and consuming services based on the OData protocol.",
+    "linkToGithub": "https://github.com/SAP/cloud-odata-java"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "PyRFC - The Python RFC Connector",
+    "projectDescription": "The pyrfc Python package provides Python bindings for SAP NetWeaver RFC Library, for a comfortable way of calling ABAP modules from Python and Python modules from ABAP, via SAP Remote Function Call (RFC) protocol.",
+    "linkToGithub": "https://github.com/SAP/PyRFC"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "ActiveRecord HANA Adapter",
+    "projectDescription": "The Hana ActiveRecord adapter provides Hana access from Ruby on Rails applications. The adapter is compatible with Ruby on Rails v3 and v4.",
+    "linkToGithub": "https://github.com/SAP/activerecord-hana-adapter"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "featured"
+    }],
+    "projectTitle": "Basecamp",
+    "projectDescription": "A simple Maven skeleton project of web app archetype.",
+    "linkToGithub": "https://github.com/SAP/cloud-basecamp"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "mobile"
+    }],
+    "projectTitle": "Responsive UI",
+    "projectDescription": "Is a responsive web application for showcasing the power of open source and SAP HANA Cloud.It hosts the supplements of SAPs TechEd 2012 session Tapping into Open Source with SAP HANA Cloud and serves as a central entry point to the content.",
+    "linkToGithub": "https://github.com/SAP/cloud-responsive-ui"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Spring Rest Samples",
+    "projectDescription": "This sample demonstrates how-to expose services as a public RESTful API using Apache CFX and the Spring framework.",
+    "linkToGithub": "https://github.com/SAP/cloud-springrest"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Ruby Gem for the MaxDB JDBC driver",
+    "projectDescription": "This is a Ruby gem that wraps the JDBC driver for the SAP MaxDB database.",
+    "linkToGithub": "https://github.com/SAP/cloud-jdbc-maxdb-gem"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Connectivity Proxy",
+    "projectDescription": "The Connectivity Proxy component allows your JavaScript application to consume backend services in a comfortable way while preventing cross-domain problems that would occur when trying to call those backends directly from the application.",
+    "linkToGithub": "https://github.com/SAP/cloud-connectivityproxy"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "mobile"
+    }],
+    "projectTitle": "ESPM reference application",
+    "projectDescription": "ESPM is a reference application project showcasing end-to-end development scenarios for UI5 mobile and web applications using OData as backend connectivity.",
+    "linkToGithub": "https://github.com/SAP/cloud-espm-scenarios"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Enterprise Granny",
+    "projectDescription": "A sample address book application demonstrating the interplay of popular open-source libraries.",
+    "linkToGithub": "https://github.com/SAP/cloud-enterprise-granny"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "PersonsList Getting Started App",
+    "projectDescription": "PersonsList offers developers a comprehensive and easy-to-use tutorial for developing an SAP HANA Cloud Web Application Scenario.",
+    "linkToGithub": "https://github.com/SAP/cloud-personslist-scenario"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "featured"
+    }],
+    "projectTitle": "SAP HANA Search Demo",
+    "projectDescription": "This sample web application demonstrates how-to use native SAP HANA search (fuzzy and linguistic) in Java applications running on SAP HANA Cloud Platform.",
+    "linkToGithub": "https://github.com/SAP/cloud-hana-search-demo"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "data"
+    }],
+    "projectTitle": "SAP HANA Scripted Views Demo",
+    "projectDescription": "This sample web application demonstrates how-to use SAP HANA Scripted Views in SAP HANA Cloud Platform.",
+    "linkToGithub": "https://github.com/SAP/cloud-hana-scriptview-demo"
+}, {
+    "categories": [{
+        "name": "general"
+    }],
+    "projectTitle": "Xcode Maven Plugin",
+    "projectDescription": "Everything you need to instrument your Apple iOS development life-cycle with Maven including the provisioning of required libraries for your local Xcode project.",
+    "linkToProject": "http://sap-production.github.io/xcode-maven-plugin/site/index.html",
+    "linkToGithub": "https://github.com/sap-production/xcode-maven-plugin"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "ActiveRecord MaxDB Adapter",
+    "projectDescription": "This is an ActiveRecord JDBC adapter for the SAP MaxDB database usable on SAP HANA Cloud. It is intended to be used in JRuby environment only and it is an extension of the ActiveRecord JDBC Adapter project.",
+    "linkToGithub": "https://github.com/SAP/cloud-activerecord-maxdb-adapter"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Paul Predicts",
+    "projectDescription": "Paul Predicts is a real-life, productively used app showing how to create a server back-end serving multiple front-end technologies. It is showing all currently available SAP HANA Cloud services.",
+    "linkToGithub": "https://github.com/SAP/cloud-paulpredicts"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Spring Roo Add-on",
+    "projectDescription": "Roo is a Rapid Application Development (RAD) framework maintained by Spring- Source. We have created plugins for Roo to make it easy and comfortable to use Roo with the SAP HANA Cloud platform. Use Roo to create a basic web...",
+    "linkToGithub": "https://github.com/SAP/cloud-roo-addon"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Spring Social",
+    "projectDescription": "This sample demonstrates how-to use spring-social to develop applications that integrate with Twitter.",
+    "linkToGithub": "https://github.com/SAP/cloud-springsocial"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }, {
+        "name": "general"
+    }],
+    "projectTitle": "DShell",
+    "projectDescription": "SAP Development Shell (DShell) enables HANA developers to deploy code to HANA with the tool of thier choice by leveragin GitHub and it's services hooks when deploying to SAP HANA. It is particularly suited for HTML/CSS and JavaScript.",
+    "linkToProject": "http://scn.sap.com/docs/DOC-41137",
+    "linkToGithub": "https://github.com/SAPDshell/dshell"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Roo SAP Gateway Add-On",
+    "projectDescription": "The SAP Netweaver Gateway Connectivity Add-On for Spring Roo adds commands to Roo that make it easy and comfortable to connect your Roo-generated projects to SAP Netweaver Gateway.",
+    "linkToGithub": "https://github.com/SAP/cloud-roo-gwaddon"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Deployment Plugin for Maven",
+    "projectDescription": "This is a plugin for Maven, which supports users in deploying web applications packaged in WAR files to SAP HANA Cloud, as well as starting/stopping instances of this web application there.",
+    "linkToGithub": "https://github.com/SAP/cloud-maven-plugin"
+}, {
+    "categories": [{
+        "name": "general"
+    }, {
+        "name": "featured"
+    }],
+    "projectTitle": "Review Ninja",
+    "projectDescription": "Enterprise-ready code review tool that integrates into GitHub enterprise. A co-innovation project between SAP and GitHub plus a broad community of GitHub enterprise users.",
+    "linkToGithub": "https://github.com/reviewninja/review.ninja"
+}, {
+    "categories": [{
+        "name": "data"
+    }, {
+        "name": "featured"
+    }],
+    "projectTitle": "Lumira Visualization Extensions",
+    "projectDescription": "SAP Lumira is SAP’s self-service analytics and visualization tool.  SAP Lumira comes with an SDK which lets you build custom extensions. These extensions can be copied into the folder structure of an SAP Lumira  and can then be used to create stunning data visualizations.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-viz"
+}, {
+    "categories": [{
+        "name": "data"
+    }, {
+        "name": "interface"
+    }],
+    "projectTitle": "Simple IndexedDB",
+    "projectDescription": "This API wraps the IndexedDB API and makes working with it much simpler.",
+    "linkToGithub": "https://github.com/SAP/Simple-IndexedDB"
+}, {
+    "categories": [{
+        "name": "general"
+    }],
+    "projectTitle": "SMP Server Utilities",
+    "projectDescription": "The utility is intended for customers/partners to analyze the behavior of their networks to identify issues that cause TCP/IP socket collection failures and breakages. Such network issues can adversely impact many SAP solutions, and it is valuable to have a utility that is independent of the SAP solutions so that customers/partners can clearly differentiate network issues from SAP issues.",
+    "linkToGithub": "https://github.com/SAP/sap_mobile_platform_server_utilities"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Lumira Twitter Extension",
+    "projectDescription": "This extension will enable users to download tweets which include a specific keyword/hashtag. Results are transferred to Lumira as input, ready for further analysis.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-da-twitter",
+    "linkToProject": "http://scn.sap.com/community/lumira/blog/2014/09/12/a-lumira-extension-to-acquire-twitter-data"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Lumira Ms Access Extension",
+    "projectDescription": "This extension will enable users to choose Microsoft Access database files and run pre-defined queries with input parameters inside Access database, transferring result set into Lumira for analysis.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-da-msaccess",
+    "linkToProject": "http://scn.sap.com/community/lumira/blog/2014/09/26/a-better-aproach-to-ms-access-lumira-msaccess-extension-dae"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Lumira GoogleDocs Extension",
+    "projectDescription": "This extension will enable users to utilize Google Spreadsheets. After inputting the document key, extension will download spreadsheet data into Lumira for analysis.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-da-googledocs",
+    "linkToProject": "http://scn.sap.com/community/lumira/blog/2014/09/12/creating-my-first-data-access-extension-for-lumira"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Lumira Linkedin Extension",
+    "projectDescription": "This extension will download a users contact list from Linkedin, allowing further analysis to be made inside SAP Lumira.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-da-linkedin"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Lumira Data Extensions Tutorial",
+    "projectDescription": "Learn to add new data sources to SAP Lumira with this step by step tutorial.",
+    "linkToGithub": "https://github.com/SAP/lumira-extension-da-windowseventlog",
+    "linkToProject": "http://scn.sap.com/community/lumira/blog/2015/01/08/lumira-data-access-extensions-step-by-step"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "Sample OData Delta-Token-Enabled Web Service",
+    "projectDescription": " version of SAP's ESPM web services built using Apache Olingo demonstrating OData delta-token support",
+    "linkToGithub": "https://github.com/SAP/sap_mobile_platform_espm_olingo_services",
+    "linkToProject": "http://scn.sap.com/community/developer-center/mobility-platform/blog/2015/01/14/build-an-optimized-hybrid-mobile-application-using-the-hana-cloud-platform"
+}, {
+    "categories": [{
+        "name": "data"
+    }],
+    "projectTitle": "SAP Jam Sample Code",
+    "projectDescription": "A collection of simple sample code containing examples that demonstrate simple API and integration workflows.",
+    "linkToGithub": "https://github.com/SAP/SAPJamSampleCode",
+    "linkToProject": "http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/tutorial-Intro.html"
+}, {
+    "categories": [{
+        "name": "cloud"
+    }],
+    "projectTitle": "Gamification Demo: HelpDesk",
+    "projectDescription": "This code example includes a sample application named 'HelpDesk' in order to demonstrate how to use the APIs of the HCP Gamification Service.",
+    "linkToGithub": "https://github.com/SAP/gamification-demo-app",
+    "linkToProject": "https://help.hana.ondemand.com/help/frameset.htm?eb90a443dde24b79b3428ac1fe27f26f.html"
+}]

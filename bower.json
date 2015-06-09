@@ -1,0 +1,7 @@
+{
+  "name": "sap.github.io",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1",
+    "fontawesome": "~4.2.0"
+  }
+}

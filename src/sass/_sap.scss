@@ -1,0 +1,333 @@
+
+
+.navbar-form {
+    margin-top: 2.5px;
+}
+
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-brand {
+    padding: 4px;
+    padding-left: 10px;
+    height: 49px;
+}
+
+.form-control {
+    height: 38px;
+}
+
+#hdplogo {
+    padding-right: 20px;
+}
+
+#sortRow {
+    margin-bottom: 25px;
+}
+
+.filter:hover {
+    text-decoration: none;
+}
+
+.forks, .stars {
+    color:  #ACB6C0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.details, .more-details {
+    font-weight: normal;
+    font-size: 12px;
+    color: #d6d6d6;
+    margin-top: 3px;
+}
+
+.more-details {
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.desc-text {
+    font-size: 16px;
+    min-height: 96px;
+    height: 96px;
+}
+
+.actions {
+    /*
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    background: #dfdfdf;
+    */
+}
+
+.btn-bottom-left, .btn-bottom-right {
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn-bottom-left {
+    color: #16a1e1;
+    background-color: rgba(0,0,0,0);
+    border-color: #16a1e1;
+}
+.btn-bottom-left:hover {
+    background-color: #003283;
+    border-color: #003283;
+}
+.btn-bottom-right {
+    background-color: #b1d349;
+    border-color: #b1d349;
+}
+.btn-bottom-right:hover {
+    background-color: #5f7d06;
+    border-color: #5f7d06;
+}
+
+.divider-vertical {
+    height: 38px;
+    margin: 0 9px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #FFF;
+}
+.filter {
+    cursor: pointer;
+}
+.btn-toggle:hover, .btn-toggle:focus, .btn-toggle.active {
+    color: black;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.btn-toggle.active:hover {
+    cursor: default;
+}
+.btn-toggle {
+    color: white;
+    background: black;
+    border-color: black;
+}
+#searchTxt {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba( 0, 0, 0, 0.2 );
+    background: #f2f2f2;
+    border: 0;
+    color: #333;
+    font-size: 12px;
+}
+#copyright {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #16a1e1;
+}
+.nav-footer {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: none;
+}
+
+
+
+.nav-category {
+    font-size: 16px;
+    color: #333;
+
+    &:hover {
+        color: white;
+        background-color: #333 !important;
+        border-radius: 3px;
+    }
+}
+
+
+
+
+#footer {
+    background-color: black;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-footer {
+
+    li {
+
+        &:last-child {
+
+            a {
+
+                &:after {
+                    border: 0;
+                }
+            }
+        }
+
+        a {
+            color: white;
+
+            &:after {
+                position: absolute;
+                content: '';
+                z-index: 2;
+                right: 0;
+                top: 10px;
+                width: 1px;
+                height: 19px;
+                border-right: solid 1px #fff;
+            }
+
+            &:hover {
+                background-color: black;
+                text-decoration: underline;
+                color: #b3b3b3;
+            }
+        }
+    }
+}
+
+
+.fa {
+    font-weight: bolder;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 3;
+    background: #d6d6d6;
+    border-color: #d6d6d6;
+    color: black;
+    border-radius: 3px;
+
+    &:hover {
+        color: white;
+        background: black;
+        border-color: black;
+    }
+}
+
+#noResults {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#templateLbl {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .desc-text {
+        min-height: 125px;
+        height: 125px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .forks, .stars {
+        font-size: 14px;
+    }
+    .details, .more-details {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-right, .navbar-header {
+        display: none;
+    }
+    .desc-text {
+        min-height: initial;
+        height: initial;
+    }
+    .details, .more-details {
+        font-size: 12px;
+    }
+    .title, .forks, .stars {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title, .forks, .stars {
+        font-size: 16px;
+    }
+    .text-right {
+        text-align:left;
+    }
+    .container h1 {
+        min-width: 0;
+        font-size: 22px;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        padding-left: 25px;
+    }
+    .icon-bar {
+        background-color: black;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .navbar {
+        background-color: #f2f2f2;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .divider-vertical {
+        display: none !important;
+    }
+    .navbar-toggle {
+        border: 1px solid black;
+    }
+    .navbar-form {
+        display: none !important;
+    }
+    .navbar-right, .navbar-header {
+        display: inherit;
+    }
+    #hdplogo {
+        margin-top: 8px;
+    }
+    .navbar-nav>li {
+        margin-left: 5px;
+        text-align: center;
+    }
+    #sortRow {
+        margin-bottom: 15px;
+    }
+    .nav-footer li a:after {
+        border-right: 0;
+    }
+}

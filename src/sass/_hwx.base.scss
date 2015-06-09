@@ -1,0 +1,522 @@
+
+
+h3 { color:#69be28; }
+
+/* remove this before production */
+/*#mobile-nav { display: none; }*/
+
+#header { border-bottom: 0; }
+
+#header > div { padding: 10px 40px; }
+
+@media only screen and (min-width: 1200px) {
+	#header > div { padding: 0 40px 0 }
+}
+
+.ext-link {
+	background-image: none !important;
+}
+
+#logo img {
+	max-width: 120%;
+}
+
+@media only screen and (min-width: 1200px) {
+	#logo img {
+		max-width: 100%;
+	}
+}
+
+.btn.alt {
+	padding: 12px 45px; 
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 0;
+	font-weight: 200;
+	white-space: nowrap;
+
+}
+.btn.alt.mobile {
+	display: inline-block;
+	white-space: normal;
+}
+
+.btn.loud.alt {
+	display: inline-block;
+	font-size: 18px;
+	padding: 16px 40px;
+}
+
+.btn.alt.desktop {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.btn.alt.mobile {
+		display: none;
+	}
+
+	.btn.alt.desktop {
+		display: inline-block;
+	}
+}
+.grid.tight-bottom {
+	padding-bottom: 0;
+}
+.grid.tight-top {
+	padding-top: 0;
+}
+.ps {
+	/*font-family: Cabin;*/
+}
+
+.ps.titlebar .title {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+@media only screen and (min-width: 370px) {
+	.ps.titlebar .title {
+		font-size: 36px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.ps.titlebar .title {
+		font-size: 46px;
+	}
+}
+
+/*************************************************/
+/**** CAROUSEL ***********************************/
+/*************************************************/
+
+
+.carousel-wrap {
+	padding: 0 !important;
+}
+.carousel {
+	margin: 0;
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+}
+.carousel-control {
+	position: absolute;
+	width: 100%;
+	top: 162px;
+	left: 0;
+	z-index: 10;
+}
+@media only screen and (min-width: 370px) {
+	.carousel-control { 
+		top: 146px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.carousel-control { 
+		top: 292px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.carousel-control { 
+		top: 275px;
+	}
+}
+
+.desk-btns {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.desk-btns {
+		display: block;
+	}
+}
+
+
+/*************************************************/
+/**** CAROUSEL PANES *****************************/
+/*************************************************/
+
+
+.carousel {
+	position: relative;
+}
+
+.carousel .panes {
+}
+.carousel .pane {
+	display: inline-block;
+	vertical-align: top;
+}
+.carousel .pane .pane-img {
+	max-width: none;
+	width: 100%;
+	height: 200px;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 768px) {
+	.carousel .pane .pane-img {
+		height: 220px;
+		height: 367px;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	.carousel .pane .pane-img {
+		height: 367px;
+	}
+}
+
+.carousel .pane .pane-content {
+	margin: 40px 20px 1px;
+	border-bottom: 1px solid #e17000;
+	padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+	.carousel .pane .pane-content {
+		margin: 40px 40px 1px;
+		padding-bottom: 0;
+	}
+}
+
+.carousel .pane.slick-active {
+	opacity: 1;
+}
+.carousel .pane h2 {
+	letter-spacing: 0.2px;
+	margin-top: 48px;
+	font-size: 35px;
+	margin-bottom: -10px;
+}
+.carousel .pane h3 a {
+	text-transform: uppercase;
+	letter-spacing: 0;
+	font-size: 21px;
+	font-weight: 500;
+}
+.carousel .pane h3 + p {
+	line-height: 2;
+	font-size: .9em;
+}
+.carousel .pane ul {
+	list-style: none;
+	padding-left: 0;
+}
+.carousel .pane ul li a {
+	display: block;
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #44697d;
+}
+.carousel .pane ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/*************************************************/
+/**** DOTS / NAV TAB *****************************/
+/*************************************************/
+
+
+.slick-dots {
+	/*position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0;*/
+	list-style: none;
+	padding-left: 0;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+.slick-dots li {
+	display: inline-block;
+	padding: 8px 9px 10px;
+	cursor: pointer;
+	color: white;
+	margin-left: 5px;
+}
+.slick-dots li:hover {
+	color: #e17000;
+}
+.slick-dots li.slick-active {
+	background-color: rgba(255, 255, 255, .9);
+	color: #e17000;
+}
+
+.slick-dots li.slick-active .nav-tab:before {
+	border-color: #e17000;
+}
+.slick-dots li:hover .nav-tab:before {
+	border-color: #e17000;
+}
+.slick-dots li .nav-tab {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: "Cabin", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", sans-serif;
+	font-weight: 600;
+}
+.slick-dots li .nav-tab:before {
+	content: '1';
+	padding: 2px 8px;
+	border: 3px solid white;
+	border-radius: 50%;
+	text-transform: uppercase;
+	margin-right: 10px;
+}
+.slick-dots li .nav-tab.Try:before {
+	content: '2';
+	padding: 2px 6px;
+}
+.slick-dots li .nav-tab.Do:before {
+	content: '3';
+	padding: 2px 6px;
+}
+
+@media only screen and (min-width: 370px) {
+	.slick-dots li .nav-tab {
+		font-size: 24px;
+	}
+	.slick-dots li .nav-tab:before {
+		padding: 2px 12px;
+		border: 4px solid white;
+	}
+	.slick-dots li .nav-tab.Try:before {
+		padding: 2px 9px;
+	}
+	.slick-dots li .nav-tab.Do:before {
+		padding: 2px 9px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.slick-dots li {
+		padding: 25px 38px 15px;
+		margin-left: 20px;
+	}
+	.slick-dots li:first-child {
+		margin-left: -70px;
+	}
+	.slick-dots li .nav-tab {
+		font-size: 24px;
+	}
+	.slick-dots li .nav-tab:before {
+		margin-right: 20px;
+		padding: 2px 12px;
+	}
+	.slick-dots li .nav-tab.Try:before {
+		padding: 2px 9px;
+	}
+	.slick-dots li .nav-tab.Do:before {
+		padding: 2px 9px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.slick-dots li {
+		padding: 25px 38px 15px;
+		margin-left: 20px;
+	}
+	.slick-dots li .nav-tab {
+		font-size: 36px;
+	}
+	.slick-dots li .nav-tab:before {
+		margin-right: 25px;
+		padding: 2px 18px;
+	}
+	.slick-dots li .nav-tab.Try:before {
+		padding: 2px 15px;
+	}
+	.slick-dots li .nav-tab.Do:before {
+		padding: 2px 15px;
+	}
+}
+
+
+/*************************************************/
+/**** PREV / NEXT ********************************/
+/*************************************************/
+
+.carousel .slick-nav {
+	opacity: 0;
+	position: absolute;
+	top: 300px;
+	z-index: 10;
+	background-color: #e17000;
+	border: 0 solid #000;
+	cursor: pointer;
+	width: 43px;
+}
+.carousel .slick-nav:hover {
+	background-color: #69be28;
+}
+@media only screen and (min-width: 960px) {
+	.carousel .slick-nav {
+		opacity: 1;
+	}
+}
+.carousel .slick-nav.slick-disabled {
+	opacity: 0;
+	cursor: default;
+}
+
+/* the next button is on the right side */
+.carousel .slick-nav.next {
+	border-right-width: 0;
+	right: 0;
+}
+
+/* the prev button is on the left side */
+.carousel .slick-nav.prev {
+	border-right-width: 0;
+	left: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+	.carousel .slick-nav.next {
+		border-right-width: 8px;
+		right: -8px;
+		width: 50px;
+	}
+	.carousel .slick-nav.prev {
+		border-left-width: 8px;
+		left: -8px;
+		width: 50px;
+	}
+}
+
+.carousel .slick-icon {
+	width: 42px;
+	height: 28px;
+	margin: 10px 14px;
+}
+.carousel .slick-icon.next {
+	background: url(/wp-content/themes/hortonworks/images/page-specific/developer/chevron-right.png) no-repeat;
+}
+.carousel .slick-icon.prev {
+	background: url(/wp-content/themes/hortonworks/images/page-specific/developer/chevron-left.png) no-repeat;
+}
+
+.carousel .slick-label {
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: #000;
+	height: 48px;
+	line-height: 48px;
+	color: white;
+	text-transform: uppercase;
+	white-space: nowrap;
+	padding: 0 20px;
+}
+
+.carousel .slick-label.next {
+	right: 43px;
+}
+.carousel .slick-label.prev {
+	left: 43px;
+}
+.carousel .slick-label.next:before {
+	content: 'next:\00a0';
+	display: inline-block;
+}
+.carousel .slick-label.prev:before {
+	content: 'prev:\00a0';
+	display: inline-block;
+}
+
+
+/*************************************************/
+/**** DEV RESOURCES ******************************/
+/*************************************************/
+
+
+
+.dev-resources {
+	padding-bottom: 30px;
+}
+.dev-resources > div {
+	background-color: white;
+	padding-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+	.dev-resources > div {
+		  padding-top: 45px;
+	}
+}
+
+.dev-resources ul {
+	list-style: none;
+	padding-left: 0;
+}
+.dev-resources ul li a {
+	display: block;
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #44697d;
+}
+.dev-resources ul li a:hover {
+	text-decoration: underline !important;
+}
+.dev-resources h2 {
+	font-size: 36px;
+}
+.dev-resources h3 {
+	margin-top: 24px;
+}
+.dev-resources ul li:last-child a {
+	margin-bottom: 0;
+}
+.dev-resources a.all {
+    font-weight: 700;
+}
+.dev-resources a.all:after {
+	content: '\203A';
+	margin-left: 4px;
+	font-size: 18px;
+}
+.dev-resources .desc {
+	font-size: 14px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	color: #787878;
+}
+.dev-resources .icon {
+	position: relative;
+	padding-left: 65px;
+	overflow: hidden;
+	line-height: 3.6;
+	margin-bottom: 0;
+}
+.dev-resources .icon:before {
+	content: url(/wp-content/themes/hortonworks/images/page-specific/developer/icons.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.dev-resources .icon.book:before { 
+	top: 4;
+}
+.dev-resources .icon.stack:before { 
+	top: -44px;
+}
+.dev-resources .icon.chat:before { 
+	top: -92px;
+}
+.dev-resources .icon.events:before { 
+	top: -137px;
+}
+.dev-resources .icon.cap:before { 
+	top: -183px;
+}
+.dev-resources .icon.headset:before { 
+	top: -230px;
+}
+
