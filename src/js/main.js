@@ -208,8 +208,6 @@ function displayObjects() {
             //     str += '<div class="col-md-2 col-xs-2 text-right"><span class="stars"></span></div>';
             // }
 
-            console.log(item);
-
             // if(item.forks_count) {
             //   str += '<div class="col-md-2 col-xs-2 text-right"><span class="forks"><i class="fa fa-code-fork"></i> ' + item.forks_count + '</span></div>';
             // } else {
@@ -397,22 +395,26 @@ $(document).ready(function() {
 
         // use GitHub API to get updatedAt per project
         $.each(jsonObjects, function(key, value) {
-            // use link to GitHub project in order to generate API endpoint uri
-            value.APIUri = value.cta_1_url.replace("https://github.com", "https://api.github.com/repos");
 
-            // collect all deffereds from calls to figure when all AJAX calls are complete
-            deferreds.push(
-                // get repo details from GitHub API
-                $.ajax({
-                    headers: {
-                      "Accept" : "application/vnd.github.v3+json",  
-                      // set authorization header to get 5000 requests/hr per IP for the GitHub API
-                      "Authorization": "token " + githubToken
-                    },
-                    url: value.APIUri,
-                    success: appendAPIData
-                })
-            );
+            if (value.cta_1_url.indexOf('https://github.com') >= 0) {
+            
+                // use link to GitHub project in order to generate API endpoint uri
+                value.APIUri = value.cta_1_url.replace("https://github.com", "https://api.github.com/repos");
+
+                // collect all deffereds from calls to figure when all AJAX calls are complete
+                deferreds.push(
+                    // get repo details from GitHub API
+                    $.ajax({
+                        headers: {
+                          "Accept" : "application/vnd.github.v3+json",  
+                          // set authorization header to get 5000 requests/hr per IP for the GitHub API
+                          "Authorization": "token " + githubToken
+                        },
+                        url: value.APIUri,
+                        success: appendAPIData
+                    })
+                );
+            }
         });
 
         $.when.apply($, deferreds).done(function() {
