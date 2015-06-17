@@ -58,7 +58,6 @@ module.exports = function(grunt) {
 	    minjson: {
 			dist: {
 			    files: { 
-                    'projects/projects.json': 'src/projects/projects.json',
                 	'projects/repos.json': 'src/projects/repos.json'
             	}
 			 }
