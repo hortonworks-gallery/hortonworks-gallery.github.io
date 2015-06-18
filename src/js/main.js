@@ -276,7 +276,11 @@ function displayObjects() {
             // str += '<hr />';
             str += '<div class="row more-details">';
             // str += '<div class="col-md-6 col-sm-6"><span class="language">Language: ' + removeHTMLChars(item.language) + '</span></div>';
-            str += '<div class="col-sm-12"><div class="contributors">Contributors: Contributor 1, Contributor 2</div></div>';
+            if (item.contributors) {
+              str += '<div class="col-sm-12"><div class="contributors">Contributors: ' + item.contributors + '</div></div>';
+            } else {
+              str += '<div class="col-sm-12"><div class="contributors">&nbsp;</div></div>';
+            }
 
             // close more-details div
             str += '</div>';
