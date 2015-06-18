@@ -17,7 +17,7 @@ for row in reader:
         if row["featured"] == "TRUE": 
           category += ",{\"name\": \"featured\"}"
         category += "]"
-        items.append(category + ", \"title\": \"" + row["projectTitle"] + "\", \"projectDescription\": \"" + row["projectDescription"] + "\", \"cta_1_url\": \"" + row["url"] + "\", \"cta_1_text\": \"" + row["buttonText"] + "\", \"repo_account\": \"" + row["repoAccount"] + "\", \"repo_name\": \"" + row["repoName"] + "\"}\n")
+        items.append(category + ", \"title\": \"" + row["projectTitle"] + "\", \"description\": \"" + row["projectDescription"] + "\", \"cta_1_url\": \"" + row["url"] + "\", \"cta_1_text\": \"" + row["buttonText"] + "\", \"repo_account\": \"" + row["repoAccount"] + "\", \"repo_name\": \"" + row["repoName"] + "\"}\n")
 projectFile.write(",".join(items))
 projectFile.write("]")
 projectFile.close()
