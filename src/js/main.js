@@ -79,8 +79,10 @@ function setCategoryActive(cat) {
     $(".nav-category").each(function(i, obj) {
         if (cat.toLowerCase() === $(obj).text().toLowerCase()) {
             $(obj).parent().addClass('active');
+            $(obj).css('background-color', '#333');
         } else {
             $(obj).parent().removeClass('active');
+            $(obj).css('background-color', '');
         }
     });
 }

@@ -137,7 +137,6 @@ li {
         }
 
         &.navbar-nav {
-        
             & > li {
 
                 &.featured {
@@ -152,10 +151,11 @@ li {
                 }
 
                 &.active {
-                    
+
                     .nav-category {
                         background-color: #aaa;
                     }
+
                 }
 
                 & > a {
@@ -274,6 +274,7 @@ li {
     margin-bottom: 40px;
     padding: 20px 30px;
     background-color: #f6f6f6;
+    min-height: 400px;
 
     .categories {
         display: block;
@@ -307,7 +308,7 @@ li {
     }
 
     .btn {
-        padding: 12px;
+        padding: 5px;
     }
 
     .more-details {
